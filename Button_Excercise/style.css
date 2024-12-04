@@ -1,0 +1,29 @@
+button {
+   color: aqua;
+   background-color: blueviolet;
+   padding: 14px 20px;
+   border: none;
+   border-radius: 7px;
+   cursor: pointer;
+   font-size: 10px;
+   margin: 250px
+}
+
+button:hover {
+    background-color: green;
+    color: aliceblue;
+    font-size: 72px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
+.delete:hover {
+    background-color: red;
+    color: aliceblue;
+    font-size: 200px;
+    border: 100px solid black;
+    border-color: red green blue yellow;
+    margin: 10px;
+    height: 100px
+}
