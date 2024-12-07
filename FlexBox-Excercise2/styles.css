@@ -1,0 +1,51 @@
+body {
+    margin: 0; 
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+.left {
+    flex: 0.8; /* Slightly smaller than the right side */
+    background-color: orange;
+    margin: 20px; /* Add margin to make it smaller */
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex: 1;
+    background-color: purple;
+    padding: 20px;
+}
+
+.right div {
+    background-color: gold;
+    padding: 15px;
+    text-align: center;
+    color: #333; 
+    width: 80%; /* Make boxes slightly smaller in width */
+    margin-left: auto; /* Align boxes to the right */
+}
+
+.top-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align buttons to the right */
+}
+
+.top-buttons div {
+  margin-bottom: 10px; /* Add space between top buttons */
+}
+
+.signup {
+    background-color: salmon;
+    padding: 15px;
+    text-align: center;
+    width: 80%; /* Make signup button smaller in width */
+    margin-left: auto; /* Align signup button to the right */
+}
