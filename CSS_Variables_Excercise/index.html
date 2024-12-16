@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Toggle</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 0;
+            background-color: #333;
+            color: #fff;
+            height: 100vh;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            padding: 1rem 0;
+        }
+
+        main {
+            flex: 1;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 1rem;
+        }
+
+        #toggle-sidebar {
+            display: none; /* Hide the default checkbox appearance */
+        }
+
+        /* Style the label as a toggle button */
+        .toggle-label {
+            position: fixed;
+            top: 90%;
+            left: 1px;
+            z-index: 1000 px;
+            display: inline-block;
+            width: 80px;
+            height: 55px;
+            background-color: #ccc;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Add the circle inside the toggle */
+        .toggle-label::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 3px;
+            width: 39px;
+            height: 39px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        /* Change the appearance when checked */
+        #toggle-sidebar:checked + .toggle-label {
+            background-color: #3eafc0;
+        }
+
+        #toggle-sidebar:checked + .toggle-label::before {
+            transform: translateX(30px);
+        }
+
+        /* Show the sidebar when checked */
+        #toggle-sidebar:checked ~ .sidebar {
+            width: 200px;
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle-sidebar">
+    <label for="toggle-sidebar" class="toggle-label"></label>
+
+
+    <div class="sidebar">
+
+        <h2>Sidebar</h2>
+        <p>Some content here...</p>
+    </div>
+
+    <main>
+        <h1>Main Content</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </main>
+</body>
+</html>

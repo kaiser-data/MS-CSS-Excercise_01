@@ -3,7 +3,6 @@ body {
     background-color: rgb(25, 51, 37);
     display: grid;      
     place-items: center;   
-
     margin: 30px;
 
 }
@@ -15,10 +14,7 @@ header {
     height: 180px;
     background-repeat: no-repeat;
     background-position: right;
-    border-radius: 15px; 
-    
-
-    
+    border-radius: 15px;   
 }
 
 header h1 {
